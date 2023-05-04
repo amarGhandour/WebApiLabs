@@ -80,7 +80,6 @@ namespace WebApiLabs.Controllers
             Topic topic = mapper.Map<Topic>(data);
 
             db.Entry(topic).State = EntityState.Modified;
-            //db.Update(course);
 
             db.SaveChanges();
 
@@ -103,7 +102,6 @@ namespace WebApiLabs.Controllers
             db.SaveChanges();
 
             return NoContent();
-
         }
 
     }
